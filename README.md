@@ -6,8 +6,8 @@ Framework enabling apps to integrate ContactAtOnce messaging with an easy-to-use
 ## Prerequisites
 
 * iOS 10 or later
-* XCode 9.x
-* Swift 4.x, or Objective-C
+* XCode 9.3
+* Swift 4.1, or Objective-C
 
 ## Installation
 
