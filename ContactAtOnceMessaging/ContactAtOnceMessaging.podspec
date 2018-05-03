@@ -8,7 +8,7 @@ Pod::Spec.new do |s|
 
   s.platform                = :ios, '10.0'
   
-  s.source                  = { :http => 'github.com/ContactAtOnce/iOS-Messaging-SDK/blob/master/ContactAtOnceMessaging/ContactAtOnceMessaging.zip' }
+  s.source                  = { :http => 'https://github.com/ContactAtOnce/iOS-Messaging-SDK/blob/master/ContactAtOnceMessaging/ContactAtOnceMessaging.zip?raw=true' }
   s.vendored_frameworks     = 'ContactAtOnceMessaging.framework'
   s.frameworks              = 'UIKit'
   s.pod_target_xcconfig     = { 'SWIFT_VERSION' => '4.1' }
