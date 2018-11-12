@@ -5,9 +5,9 @@ This project requires the use of cocoa pods. Follow the instructions below to op
 
 ## Prerequisites
 
-* iOS 10 or later
-* XCode 9.x
-* Swift 4.x, or Objective-C
+* iOS 10.3 or later
+* Xcode 10
+* Swift 4.2
 
 ## Installation
 
@@ -26,4 +26,7 @@ This project requires the use of cocoa pods. Follow the instructions below to op
 
 ### Step 2
 
-Open the .xcworkspace file that was created.
+ 1. Open the .xcworkspace file and select the Reference App target.
+ 
+ 2. Drag the `ContactAtOnceMessaging.framework` file to the area called `Embedded Libraries` under General. Make sure Copy Items if needed is checked.
+
