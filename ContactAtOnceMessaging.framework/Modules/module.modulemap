@@ -1,0 +1,11 @@
+framework module ContactAtOnceMessaging {
+  umbrella header "ContactAtOnceMessaging.h"
+
+  export *
+  module * { export * }
+}
+
+module ContactAtOnceMessaging.Swift {
+    header "ContactAtOnceMessaging-Swift.h"
+    requires objc
+}

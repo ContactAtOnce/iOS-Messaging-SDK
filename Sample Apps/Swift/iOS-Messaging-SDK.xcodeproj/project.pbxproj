@@ -56,8 +56,6 @@
 		A1D9BF881FDAF740002A7B2F /* ListingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingManager.swift; sourceTree = "<group>"; };
 		A1EA902F1FD0393100FCE9E0 /* AppSettings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		A1EA90311FD041A100FCE9E0 /* AppSettingsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppSettingsController.swift; sourceTree = "<group>"; };
-		A66D4A31DE17837C2A9BB09D /* Pods-Reference App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reference App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Reference App/Pods-Reference App.debug.xcconfig"; sourceTree = "<group>"; };
-		E7823156E519322887C84AF3 /* Pods-Reference App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Reference App.release.xcconfig"; path = "Pods/Target Support Files/Pods-Reference App/Pods-Reference App.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,15 +69,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		89CC02FEDF368759A0CD92C0 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				A66D4A31DE17837C2A9BB09D /* Pods-Reference App.debug.xcconfig */,
-				E7823156E519322887C84AF3 /* Pods-Reference App.release.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		A10E4CB31FCC5D95008D8C69 /* Traits */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,8 +96,6 @@
 			children = (
 				A187A2A11FB9FF1E00CC7E01 /* Reference App */,
 				A187A2831FB9FE8600CC7E01 /* Products */,
-				89CC02FEDF368759A0CD92C0 /* Pods */,
-				D77A7FE417514ABCEC78D97C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -136,13 +123,6 @@
 				A187A2AE1FB9FF1E00CC7E01 /* Info.plist */,
 			);
 			path = "Reference App";
-			sourceTree = "<group>";
-		};
-		D77A7FE417514ABCEC78D97C /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -413,13 +393,21 @@
 		};
 		A187A2BA1FB9FF1E00CC7E01 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A66D4A31DE17837C2A9BB09D /* Pods-Reference App.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Reference App/CAO Test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVVL8UW6MZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ContactAtOnceMessaging/ContactAtOnceMessaging",
+					"$(PROJECT_DIR)/Reference\\ App",
+					"$(PROJECT_DIR)/Reference\\ App",
+					"$(PROJECT_DIR)/Reference\\ App",
+					"$(PROJECT_DIR)/Reference\\ App",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Reference App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -432,13 +420,21 @@
 		};
 		A187A2BB1FB9FF1E00CC7E01 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = E7823156E519322887C84AF3 /* Pods-Reference App.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "Reference App/CAO Test.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVVL8UW6MZ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ContactAtOnceMessaging/ContactAtOnceMessaging",
+					"$(PROJECT_DIR)/Reference\\ App",
+					"$(PROJECT_DIR)/Reference\\ App",
+					"$(PROJECT_DIR)/Reference\\ App",
+					"$(PROJECT_DIR)/Reference\\ App",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Reference App/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

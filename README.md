@@ -5,9 +5,9 @@ Framework enabling apps to integrate ContactAtOnce messaging with an easy-to-use
 
 ## Prerequisites
 
-* iOS 10 or later
-* XCode 9.3
-* Swift 4.1, or Objective-C
+* iOS 10.3 or later
+* XCode 10.x
+* Swift 4.2
 
 ## Installation
 
@@ -24,13 +24,17 @@ Because of the dependencies required for the framework, we strongly encourage th
 	$ pod init
 ```
  3. Podfile should be created under your project’s folder.
- To integrate ContactAtOnce Messaging SDK into your Xcode project using CocoaPods, specify it in your Podfile:
+ To integrate ContactAtOnce Messaging SDK into your Xcode project using CocoaPods, specify the dependencies in your Podfile:
 ```
-	platform :ios, '10.0'
+	platform :ios, '10.3'
 	use_frameworks!
 
 	target '<Your Target Name>' do
-	    pod 'ContactAtOnceMessaging'
+		pod 'TTTAttributedLabel', '~> 2.0'
+		pod 'SLXMPPFramework', '~> 4.0'
+		pod 'Promises', '~> 2.0'
+		pod 'RNCryptor', '~> 5.0'
+		pod 'ReachabilitySwift', '~> 4.3'
 	end
 ```
 
@@ -42,6 +46,12 @@ Because of the dependencies required for the framework, we strongly encourage th
 ```
  $ pod update
 ```
+
+ 6. Open the .xcworkspace file and select your target.
+ 
+ 7. Drag the `ContactAtOnceMessaging.framework` file to the area called `Embedded Libraries` under General. Make sure Copy Items if needed is checked.
+ 
+
 
 
 ### Step 2
